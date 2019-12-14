@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import styles from './App.module.css'; ; // Import css modules stylesheet as styles
+import styles from './App.module.css'; // Import css modules stylesheet as styles
+import './styles/_test.scss';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <span className = "scss_class" >This styled with scss import using node-sass</span>
       </header>
     </div>
   );
