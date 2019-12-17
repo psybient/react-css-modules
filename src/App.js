@@ -10,8 +10,6 @@ const TabPane = Tabs.TabPane;
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
-//const ReactDragListView = window["react-drag-listview"];
-
 function App() {
   return (
     <Layout style={{ backgroundColor: 'rgba(30, 135, 40, 0.5)', minHeight: '100vh', overflowY: 'hidden' }}>
@@ -109,6 +107,7 @@ function App() {
 }
 
 export default App;
+
 function callback(key) {
   console.log(key);
 }
