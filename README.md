@@ -29,7 +29,12 @@ An enterprise-class UI design language for web applications.
 
 ### Using antd component:
 
-```.babelrc {  "plugins": [    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]  ]} ```
+```.babelrc :```
+       ``` {  "plugins": ```
+       ``` [```    
+           ``` ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]```
+       ```]```
+    ```} ```
 
 This allows you to import components from antd without having to manually import 
 the corresponding stylesheet. The antd babel plugin will automatically import stylesheets.
@@ -39,6 +44,7 @@ the corresponding stylesheet. The antd babel plugin will automatically import st
 >import js and css modularly, parsed by babel-plugin-import
 
 ### Manually import
+
 ```import DatePicker from 'antd/lib/date-picker';  // for js```
 ```import 'antd/lib/date-picker/style/css';        // for css```
 ```// import 'antd/lib/date-picker/style';         // that will import less```
