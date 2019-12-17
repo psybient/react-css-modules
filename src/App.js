@@ -5,13 +5,12 @@ import { Route } from 'react-router';
 import './App.css'; // Import css modules stylesheet as styles
 import 'antd/dist/antd.css';
 import { Layout, Menu, Breadcrumb, Tabs, Icon } from 'antd';
+import DragableTable from './components/DragableTable';
 const TabPane = Tabs.TabPane;
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
-//class App extends React.Component {
-function callback(key) {
-  console.log(key);
-}
+
+//const ReactDragListView = window["react-drag-listview"];
 
 function App() {
   return (
@@ -91,25 +90,12 @@ function App() {
 
             <div style={{ background: '#fff', padding: 10, minHeight: '60vh' }}>
               <Tabs defaultActiveKey="1" onChange={callback}>
-                <TabPane tab="Tab 1" key="1"> Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
-                  Ant Design ©2018 Created by Ant UED <br />
+                <TabPane tab="Tab 1" key="1">
+                  Content of Tab Pane 1
                 </TabPane>
-                <TabPane tab="Tab 2" key="2">Content of Tab Pane 2</TabPane>
+                <TabPane tab="Tab 2" key="2">
+                  <DragableTable />
+                </TabPane>
                 <TabPane tab="Tab 3" key="3">Content of Tab Pane 3</TabPane>
               </Tabs>
             </div>
@@ -123,3 +109,6 @@ function App() {
 }
 
 export default App;
+function callback(key) {
+  console.log(key);
+}
