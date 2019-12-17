@@ -23,10 +23,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```import { DatePicker, message } from 'antd'```
 ```import 'antd/dist/antd.css'```
 
-### Documentations
-
-This section has moved here:[https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://ant.design/docs/react/introduce)
-
 ### Github
 
 This section has moved here: [ ant-design A UI Design Language and React UI library ](https://github.com/ant-design/ant-design)
