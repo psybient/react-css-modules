@@ -5,6 +5,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Ant.Design
+An enterprise-class UI design language for web applications.
+
+### Features
+
+- Modern browsers and Internet Explorer 9+ (with polyfills)
+- Server-side Rendering
+- Electron
 
 ### Install
 
@@ -14,14 +21,26 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```import { DatePicker } from 'antd'```
 
-### Config:
 
-```.babelrc {  "plugins": [    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]  ]} ```
-
-### Using antd component
+### Usage
 
 ```import { DatePicker, message } from 'antd'```
 ```import 'antd/dist/antd.css'```
+
+### Using antd component:
+
+```.babelrc {  "plugins": [    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]  ]} ```
+
+This allows you to import components from antd without having to manually import 
+the corresponding stylesheet. The antd babel plugin will automatically import stylesheets.
+
+```import { DatePicker } from 'antd'```
+
+>import js and css modularly, parsed by babel-plugin-import
+### Manually import
+```import DatePicker from 'antd/lib/date-picker';  // for js```
+```import 'antd/lib/date-picker/style/css';        // for css```
+```// import 'antd/lib/date-picker/style';         // that will import less```
 
 ### Github
 
