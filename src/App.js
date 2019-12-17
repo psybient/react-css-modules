@@ -1,11 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Route } from 'react-router';
+import React from 'react'
+import { Route } from 'react-router'
 
-import './App.css'; // Import css modules stylesheet as styles
-import 'antd/dist/antd.css';
-import { Layout, Menu, Breadcrumb, Tabs, Icon } from 'antd';
-import DragableTable from './components/DragableTable';
+import './App.css' // Import css modules stylesheet as styles
+import 'antd/dist/antd.css'
+
+import { Layout, Menu, Breadcrumb, Tabs, Icon, Carousel } from 'antd'
+
+import DragableTable from './components/DragableTable'
+import Increment from './components/Increment'
+import TimeLine from './components/TimeLine'
+
 const TabPane = Tabs.TabPane;
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -89,12 +93,31 @@ function App() {
             <div style={{ background: '#fff', padding: 10, minHeight: '60vh' }}>
               <Tabs defaultActiveKey="1" onChange={callback}>
                 <TabPane tab="Tab 1" key="1">
-                  Content of Tab Pane 1
+                  <Carousel effect="fade">
+                    <div>
+                      <h3>1</h3>
+                    </div>
+                    <div>
+                      <h3>2</h3>
+                    </div>
+                    <div>
+                      <h3>3</h3>
+                    </div>
+                    <div>
+                      <h3>4</h3>
+                    </div>
+                  </Carousel>
+                  <TimeLine />
                 </TabPane>
+
                 <TabPane tab="Tab 2" key="2">
                   <DragableTable />
                 </TabPane>
-                <TabPane tab="Tab 3" key="3">Content of Tab Pane 3</TabPane>
+
+                <TabPane tab="Tab 3" key="3">
+                  <Increment />
+                </TabPane>
+
               </Tabs>
             </div>
 
