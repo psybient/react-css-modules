@@ -37,14 +37,19 @@ the corresponding stylesheet. The antd babel plugin will automatically import st
 ```import { DatePicker } from 'antd'```
 
 >import js and css modularly, parsed by babel-plugin-import
+
 ### Manually import
 ```import DatePicker from 'antd/lib/date-picker';  // for js```
 ```import 'antd/lib/date-picker/style/css';        // for css```
 ```// import 'antd/lib/date-picker/style';         // that will import less```
 
-### Github
 
-This section has moved here: [ ant-design A UI Design Language and React UI library ](https://github.com/ant-design/ant-design)
+
+### Documentation
+[Ant Design of React](https://2x.ant.design/docs/react/introduce)
+
+### Github
+[ ant-design A UI Design Language and React UI library ](https://github.com/ant-design/ant-design)
 
 ## Available Scripts
 
