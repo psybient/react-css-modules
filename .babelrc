@@ -1,0 +1,6 @@
+// .babelrc or babel-loader option to enable modularized antd
+{
+    "plugins": [
+      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }] // `style: true` for less
+    ]
+  }
