@@ -14,12 +14,17 @@
 
 .ant-carousel .slick-slide {
   text-align: center;
-  height: 160px;
-  line-height: 160px;
+  height: 260px;
+  min-height: 260px;
+  line-height: 270px;
   background: #364d79;
   overflow: hidden;
 }
 
 .ant-carousel .slick-slide h3 {
   color: #fff;
+}
+
+.anticon{
+  font-size:24px;
 }

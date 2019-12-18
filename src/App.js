@@ -36,25 +36,25 @@ function App() {
        <SiteSidebar width={"26%"} />
 
         <Layout style={{ padding: '0 2px 2px' }}>
-          <Breadcrumb style={{ margin: '16px 0' }}>
+          <Breadcrumb style={{ margin: '16px 0 ' }}>
             <Breadcrumb.Item>Home</Breadcrumb.Item>
             <Breadcrumb.Item>List</Breadcrumb.Item>
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb>
-          <Content style={{ padding: '0 0', marginTop: 9 }}>
+          <Content style={{ padding: '0 0', marginTop: 5 }}>
 
-            <div style={{ background: '#fff', padding: 0, minHeight: '60vh' }}>
+            <div style={{ background: '#fff', padding: 10, minHeight: '60vh' }}>
               <Tabs defaultActiveKey="1" onChange={callback}>
-                <TabPane tab="Tab 1" key="1">
-                  <SiteCarousel effect="fade" />
+                <TabPane tab={<Icon type="fire" />} key="1">
+                  <SiteCarousel effect="scrollx" />
                   <TimeLine />
                 </TabPane>
 
-                <TabPane tab="Tab 2" key="2">
+                <TabPane tab={<Icon type="dashboard" />} key="2">
                   <DragableTable />
                 </TabPane>
 
-                <TabPane tab="Tab 3" key="3">
+                <TabPane tab={<Icon type="customer-service" />} key="3">
                   <Increment />
                 </TabPane>
 
@@ -62,7 +62,7 @@ function App() {
             </div>
 
           </Content>
-          <Footer style={{ textAlign: 'center' }}>This Is footer Copyright, social, etc..</Footer>
+          <Footer  style={{ fontSize: '24px', color: '#08c', textAlign:"center" }} >This Is footer Copyright, social, etc..</Footer>
         </Layout>
       </Layout>
     </Layout>

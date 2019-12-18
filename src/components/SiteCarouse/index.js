@@ -15,10 +15,10 @@ class SiteCarousel extends React.Component {
             <Carousel effect={this.props.effect}> 
                 <div>
                     <Row>
-                        <Col span={8}><img style={{position:"absolute", top:0}} src={cp1} alt="hi" ></img></Col>
-                        <Col span={8}><img style={{position:"absolute", top:0}} src={cp1} alt="hi" ></img></Col>
-                        <Col span={8}><img style={{position:"absolute", top:0}} src={cp1} alt="hi" ></img></Col>
-                    </Row>
+                        <Col span={8}></Col>
+                        <Col span={8}><img style={{position:"absolute",top:0}} src={cp1} alt="hi" ></img></Col>
+                        <Col span={8}></Col>
+                    </Row>               
                 </div>
                 <div>
                     <h3>2</h3>
