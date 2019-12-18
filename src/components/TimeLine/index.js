@@ -2,7 +2,8 @@ import React from 'react';
 import { Timeline, Icon } from 'antd';
 
 function TimeLine() {
-    return (<Timeline mode="alternate" style={{marginTop:20}}>
+    return (
+    <Timeline mode="alternate" style={{marginTop:20}}>
         <Timeline.Item>Create a services site 2019-12-17</Timeline.Item>
         <Timeline.Item color="green">Solve initial network problems 2019-12-17</Timeline.Item>
         <Timeline.Item dot={<Icon type="clock-circle-o" style={{ fontSize: '16px' }} />}>
